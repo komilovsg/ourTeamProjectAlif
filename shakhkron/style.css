@@ -6,19 +6,17 @@
 
 body {
   font-family: Arial, sans-serif;
-  /* background-color: #f9f9f9; */
   color: black;
 }
 
 .container {
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 10px auto 20px auto;
   padding: 20px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -54,41 +52,94 @@ section.active {
   display: block;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-table td {
-  padding: 10px;
-  border: 1px solid #ddd;
-}
-
 .review {
   display: flex;
   margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .avatar {
   width: 50px;
   height: 50px;
-  background-color: #eee;
+  background-color: #007bff;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
+  flex: 1;
 }
 
-.content p {
+.header {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 5px;
 }
 
+.name {
+  font-weight: bold;
+}
+
+.date {
+  color: gray;
+  font-weight: 100;
+  font-size: smaller;
+}
+
 .stars {
-  color: gold;
+  color: #ffd700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.comment {
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.heartIcon {
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heartIcon:hover {
+  object-fit: cover;
+}
+
+.dropdown {
+  margin-bottom: 10px;
+}
+
+.dropdown-select {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.dropdown-item {
+  padding: 5px;
+}
+
+.arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(45deg);
+  margin-left: 10px;
+  transition: transform 0.2s ease;
 }
 
 .delivery-option {
@@ -97,4 +148,48 @@ table td {
   padding: 10px;
   border: 1px solid #ddd;
   margin-bottom: 10px;
+}
+
+#description p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+}
+#description p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+#characteristics.active {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.spec-column {
+  flex: 1;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.spec-column:last-child {
+  border-right: none;
+}
+
+.spec-column h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+.spec-column p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.spec-column p strong {
+  font-weight: 300;
 }
