@@ -1,14 +1,13 @@
-// Элемент root
 const root = document.getElementById('root');
 
-// Создание контейнера
+
 const container = document.createElement('div');
 container.className = 'container';
 
-// Создание навигации (меню)
+
 const nav = document.createElement('nav');
 
-// Названия вкладок
+
 const tabs = [
   { id: 'description', name: 'Описание' },
   { id: 'characteristics', name: 'Характеристика' },
@@ -16,19 +15,18 @@ const tabs = [
   { id: 'delivery', name: 'Доставка' }
 ];
 
-// Создаем кнопки для каждой вкладки
+
 tabs.forEach(tab => {
   const button = document.createElement('button');
   button.className = 'tab';
   button.textContent = tab.name;
   button.dataset.tab = tab.id;
 
-  // Добавляем класс активной кнопке по умолчанию
   if (tab.id === 'description') {
     button.classList.add('active');
   }
 
-  // Обработчик клика для каждой кнопки
+
   button.addEventListener('click', () => {
     document.querySelectorAll('section').forEach(section => section.classList.remove('active'));
     document.querySelectorAll('.tab').forEach(btn => btn.classList.remove('active'));
@@ -40,10 +38,9 @@ tabs.forEach(tab => {
   nav.appendChild(button);
 });
 
-// Добавляем навигацию в контейнер
+
 container.appendChild(nav);
 
-// Создание секций
 const descriptionSection = document.createElement('section');
 descriptionSection.id = 'description';
 descriptionSection.classList.add('active');
@@ -131,5 +128,4 @@ deliveryOptions.forEach(option => {
 });
 container.appendChild(deliverySection);
 
-// Добавляем контейнер в root
 root.appendChild(container);
