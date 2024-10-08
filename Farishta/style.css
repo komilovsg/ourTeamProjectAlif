@@ -742,8 +742,8 @@ section.active {
   margin: 35px 25px;
 }
 .miniContainer {
-  width: 95vw;
-  height: 525px;
+  width: 500px;
+  height: 225px;
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;

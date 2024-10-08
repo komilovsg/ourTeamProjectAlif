@@ -1,0 +1,53 @@
+footer {
+    background-color: #141414;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer section {
+    margin-bottom: 30px;
+}
+
+footer hr {
+    width: 90%;
+    margin: 20px auto;
+}
+
+footer input[type="email"] {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+footer input[type="checkbox"] {
+    width: 10px;
+    height: 10px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none; 
+}
+
+.footer-link:hover {
+    color: #cccccc;
+    cursor: pointer;
+}
+
+.mailInput{
+    width: 320px;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid yellow ;
+}
+
+.textNashimPravilam{
+    width: 350px;
+}
+
+.lastText{
+    width: 680px;
+    color: #FFFFFFCC;
+}
