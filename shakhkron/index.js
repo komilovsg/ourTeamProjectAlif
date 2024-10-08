@@ -356,114 +356,110 @@ container.appendChild(deliverySection);
 
 root.appendChild(container);
 
+//----------------------------------NEW PART-------------------------------//
 
 const abdulloFunction = () => {
   const root = document.getElementById("root");
-const container = document.createElement("div");
-container.className = "containerAbdullo";
+  const container = document.createElement("div");
+  container.className = "containerAbdullo";
 
-const div1 = document.createElement("div");
-div1.textContent = "Похожие товары";
-div1.className = "div1";
+  const div1 = document.createElement("div");
+  div1.textContent = "Похожие товары";
+  div1.className = "div1";
 
-const miniContainer = document.createElement("div");
-miniContainer.className = "miniContainer";
+  const miniContainer = document.createElement("div");
+  miniContainer.className = "miniContainer";
 
-function createProductBlock() {
-  const block = document.createElement("div");
-  block.className = "block";
+  function createProductBlock() {
+    const block = document.createElement("div");
+    block.className = "block";
 
-  const mindiv1 = document.createElement("div");
-  mindiv1.className = "mindiv1";
+    const mindiv1 = document.createElement("div");
+    mindiv1.className = "mindiv1";
 
-  const mindiv2 = document.createElement("div");
-  mindiv2.innerHTML = `<h2 class="h2">Нож Лиса</h2>
-    <div class="d1"><span>95x18</span> <span>Орех, Алюминий</span></div>
-    <div class="d2">
-        <div class="dd">
-            <img src="img/Звезда.png" class="stars">
-            <img src="img/Звезда.png" class="stars">
-            <img src="img/Звезда.png" class="stars">
-            <img src="img/Звезда.png" class="stars">
-            <img src="img/Звезда.png" class="stars">
-        </div>
-        <span>12 отзывов</span>
-    </div>
-    <hr class="hr">
-    <div class="footer">
-        <span>2 719P</span>
-        <div>
-            <img src="img/Весы.png" class="icons">
-            <img src="img/Сердечко.png" class="icons">
-        </div>
-    </div>`;
+    const mindiv2 = document.createElement("div");
 
-  block.append(mindiv1);
-  block.append(mindiv2);
-  return block;
-}
+    // Создаем заголовок
+    const h2 = document.createElement("h2");
+    h2.className = "h2";
+    h2.textContent = "Нож Лиса";
 
-const container2 = document.createElement("div");
-container2.className = "containerAbdullo";
+    // Создаем первую строку
+    const d1 = document.createElement("div");
+    d1.className = "d1";
+    const span1 = document.createElement("span");
+    span1.textContent = "95x18";
+    const span2 = document.createElement("span");
+    span2.textContent = "Орех, Алюминий";
+    d1.append(span1, span2);
 
-const div2 = document.createElement("div");
-div2.textContent = "Рекомендуем";
-div2.className = "div1";
+    // Создаем вторую строку
+    const d2 = document.createElement("div");
+    d2.className = "d2";
+    const dd = document.createElement("div");
+    dd.className = "dd";
+    for (let i = 0; i < 5; i++) {
+      const star = document.createElement("img");
+      star.src = "img/Звезда.png";
+      star.className = "stars";
+      dd.appendChild(star);
+    }
+    const reviewsSpan = document.createElement("span");
+    reviewsSpan.textContent = "12 отзывов";
+    d2.append(dd, reviewsSpan);
 
-const miniContainer2 = document.createElement("div");
-miniContainer2.className = "miniContainer";
+    // Создаем линию
+    const hr = document.createElement("hr");
+    hr.className = "hr";
 
-function createProductBlock2() {
-  const block = document.createElement("div");
-  block.className = "block";
+    // Создаем футер
+    const footer = document.createElement("div");
+    footer.className = "footer";
+    const priceSpan = document.createElement("span");
+    priceSpan.textContent = "2 719P";
+    const iconsDiv = document.createElement("div");
+    const weightIcon = document.createElement("img");
+    weightIcon.src = "img/Весы.png";
+    weightIcon.className = "icons";
+    const heartIcon = document.createElement("img");
+    heartIcon.src = "img/Сердечко.png";
+    heartIcon.className = "icons";
+    iconsDiv.append(weightIcon, heartIcon);
+    footer.append(priceSpan, iconsDiv);
 
-  const mindiv1 = document.createElement("div");
-  mindiv1.className = "mindiv1";
+    // Собираем блок
+    mindiv2.append(h2, d1, d2, hr, footer);
+    block.append(mindiv1, mindiv2);
+    return block;
+  }
 
-  const mindiv2 = document.createElement("div");
-  mindiv2.innerHTML = `<h2 class="h2">Нож Лиса</h2>
-    <div class="d1"><span>95x18</span> <span>Орех, Алюминий</span></div>
-    <div class="d2">
-        <div class="dd">
-            <img src="img/Звезда.png" class="stars">
-            <img src="img/Звезда.png" class="stars">
-            <img src="img/Звезда.png" class="stars">
-            <img src="img/Звезда.png" class="stars">
-            <img src="img/Звезда.png" class="stars">
-        </div>
-        <span>12 отзывов</span>
-    </div>
-    <hr class="hr">
-    <div class="footer">
-        <span>2 719P</span>
-        <div>
-            <img src="img/Весы.png" class="icons">
-            <img src="img/Сердечко.png" class="icons">
-        </div>
-    </div>`;
+  const container2 = document.createElement("div");
+  container2.className = "containerAbdullo";
 
-  block.append(mindiv1);
-  block.append(mindiv2);
-  return block;
-}
+  const div2 = document.createElement("div");
+  div2.textContent = "Рекомендуем";
+  div2.className = "div1";
 
-container.append(div1);
-miniContainer.append(createProductBlock());
-miniContainer.append(createProductBlock());
-miniContainer.append(createProductBlock());
-miniContainer.append(createProductBlock());
-container.append(miniContainer);
-container.append(div2);
+  const miniContainer2 = document.createElement("div");
+  miniContainer2.className = "miniContainer";
 
-miniContainer2.append(createProductBlock2());
-miniContainer2.append(createProductBlock2());
-miniContainer2.append(createProductBlock2());
-miniContainer2.append(createProductBlock2());
-container2.append(miniContainer2);
+  function createProductBlock2() {
+    return createProductBlock(); // Используем ту же функцию для повторного использования
+  }
 
-root.append(container);
-root.append(container2);
+  container.append(div1);
+  for (let i = 0; i < 4; i++) {
+    miniContainer.append(createProductBlock());
+  }
+  container.append(miniContainer);
+  container.append(div2);
 
+  for (let i = 0; i < 4; i++) {
+    miniContainer2.append(createProductBlock2());
+  }
+  container2.append(miniContainer2);
+
+  root.append(container);
+  root.append(container2);
 };
-
 abdulloFunction();
