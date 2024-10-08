@@ -1,3 +1,5 @@
+
+
 .container {
   width: fit-content;
   height: fit-content;
@@ -9,6 +11,7 @@
   margin: 35px 25px;
 }
 .miniContainer {
+  
   width: 95vw;
   height: 525px;
   margin-bottom: 50px;
