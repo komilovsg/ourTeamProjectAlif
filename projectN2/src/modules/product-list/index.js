@@ -56,7 +56,12 @@ const shakhronFunction = () => {
     description.textContent = product.description;
 
     const stock = document.createElement("p");
-    stock.innerHTML = `Товары под заказ в наличии: <span>${product.stock}шт</span>`;
+    stock.textContent = "Товары под заказ в наличии: ";
+
+    const stockSpan = document.createElement("span");
+    stockSpan.textContent = `${product.stock}шт`;
+
+    stock.append(stockSpan);
 
     const price = document.createElement("p");
     price.textContent = `Цены от: ${product.price}`;
