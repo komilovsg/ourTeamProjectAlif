@@ -1,4 +1,3 @@
 import "./navbar/index.js";
-import "./order/index.js";
-import "./product-list/index.js";
+import "./main/index.js";
 import "./footer/index.js";

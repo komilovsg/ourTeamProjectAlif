@@ -130,18 +130,18 @@ function farishtaFunction() {
     {
       icon: "../src/shared/icons/camera.png",
       title: ">100 000",
-      desc: "Производственная площадь."
+      desc: "Производственная площадь.",
     },
     {
       icon: "../src/shared/icons/profile.png",
       title: ">1 100",
-      desc: "Рабочий коллектив."
+      desc: "Рабочий коллектив.",
     },
     {
       icon: "../src/shared/icons/star.png",
       title: "ОФИЦИАЛЬНО",
-      desc: "Мы находимся в национальном реестре промышленных предприятий."
-    }
+      desc: "Мы находимся в национальном реестре промышленных предприятий.",
+    },
   ];
 
   const wraperBg = document.createElement("div");
