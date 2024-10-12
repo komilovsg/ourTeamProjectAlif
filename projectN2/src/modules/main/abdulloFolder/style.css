@@ -1,0 +1,247 @@
+.main-container {
+  width: 99vw;
+  height: 100vh;
+  display: flex;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  flex-wrap: nowrap;
+}
+.div {
+  width: 50%;
+  height: 95%;
+  margin: 0px;
+}
+.header {
+  width: 100%;
+  height: 10%;
+  font-size: x-large;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-right: 1px solid gray;
+  border-radius: 5px;
+}
+.minidiv-up {
+  width: 100%;
+  height: 40%;
+  background-color: azure;
+  display: flex;
+}
+.blokupimg1 {
+  width: 50%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/Картинка1.png");
+  display: flex;
+  flex-direction: row-reverse;
+}
+.img-left,
+.img-right {
+  margin-top: 15px;
+}
+.bloktext {
+  width: 45%;
+  height: 90%;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 17px;
+}
+.text {
+  font-weight: 500;
+  font-size: 25px;
+}
+.minidiv-down {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.red-text {
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+}
+.black-text {
+  font-weight: bold;
+  font-size: 30px;
+}
+.blokdownimg1 {
+  width: 50%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/Картинка2.png");
+}
+.blokupimg2 {
+  width: 50%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/Картинка3.png");
+  display: flex;
+  flex-direction: row-reverse;
+}
+.blokdownimg2 {
+  width: 50%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/Картинка4.png");
+}
+
+.button-left {
+  width: 60px;
+  height: 60px;
+
+  border: 2px solid brown;
+  border-radius: 50px;
+  padding: 45px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-left2 {
+  width: 45px;
+}
+.button-right {
+  width: 60px;
+  height: 60px;
+  border: 2px solid brown;
+  border-radius: 50px;
+  padding: 45px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-right2 {
+  width: 45px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 11%;
+  display: flex;
+}
+.foot1 {
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: x-large;
+  color: gray;
+  border-right: 1px solid grey;
+}
+.foot2 {
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: x-large;
+  border: 1px solid grey;
+}
+.img1 {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+.foot3 {
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: x-large;
+  border: 1px solid grey;
+
+  color: blue;
+}
+.img2 {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+.foot4 {
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: x-large;
+  color: gray;
+  border-left: 1px solid grey;
+}
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .div {
+    width: 100%;
+    height: 40%;
+    margin: 0px;
+  }
+  .header {
+    font-size: medium;
+    height: 13%;
+    text-align: center;
+    border: 0;
+  }
+  .minidiv-up {
+    width: 100%;
+    height: 43%;
+  }
+  .minidiv-down {
+    width: 100%;
+    height: 43%;
+  }
+  .blokupimg1 {
+    width: 49%;
+    height: 100%;
+  }
+
+  .bloktext {
+    font-size: 15px;
+    margin-left: 0;
+  }
+  .red-text,
+  .black-text {
+    font-size: 15px;
+  }
+  .button-left,
+  .button-right {
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    margin-top: 0px;
+  }
+  .img-left,
+  .img-right {
+    visibility: hidden;
+  }
+  .img-left2,
+  .img-right2 {
+    width: 15px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .footer {
+    flex-direction: column;
+    position: relative;
+  }
+  .foot1,
+  .foot4 {
+    visibility: hidden;
+  }
+  .foot2,
+  .foot3 {
+    width: 100%;
+    border: none;
+    border: 1px solid grey;
+    padding: 15px;
+  }
+}

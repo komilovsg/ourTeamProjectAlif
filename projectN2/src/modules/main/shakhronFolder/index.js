@@ -1,6 +1,4 @@
-console.log("Шахрон Комилов");
-
-export const shakhronFunctionBlock1 = () => {
+const shakhronFunctionBlock1 = () => {
   const root = document.getElementById("root");
   const mainContainer = document.createElement("div");
   mainContainer.className = "main-container";
@@ -41,7 +39,7 @@ export const shakhronFunctionBlock1 = () => {
     const leftButton = document.createElement("div");
     leftButton.className = "nav-button nav-button-left";
     const leftIcon = document.createElement("img");
-    leftIcon.src = "../../../shered/icons/blueArrow.png";
+    leftIcon.src = "../src/shared/icons/blueArrow.png";
     leftIcon.className = "button-icon";
     leftButton.append(leftIcon);
     upperText.append(leftButton);
@@ -68,12 +66,12 @@ export const shakhronFunctionBlock1 = () => {
     const priceContainerLower = document.createElement("div");
     priceContainerLower.className = "news-price";
     priceContainerLower.textContent = price;
-    lowerText.append(priceContainerLower);
+    lowerText.append(priceContainerLower); // Добавление цены в нижнюю часть
 
     const rightButton = document.createElement("div");
     rightButton.className = "nav-button-secont-gr nav-button-right";
     const rightIcon = document.createElement("img");
-    rightIcon.src = "../../../shered/icons/blueArrow.png";
+    rightIcon.src = "../src/shared/icons/blueArrow.png";
     rightIcon.className = "button-icon-second-gr";
     rightButton.append(rightIcon);
     lowerText.append(rightButton);
@@ -94,8 +92,8 @@ export const shakhronFunctionBlock1 = () => {
   };
 
   const newsBlock1 = createNewsBlock({
-    upperImage: "../../../shered/images/Rectangle1.png",
-    lowerImage: "../../../shered/images/Rectangle2.png",
+    upperImage: "../src/shared/images/Rectangle1.png",
+    lowerImage: "../src/shared/images/Rectangle2.png",
     title: "ДОСТАВКА ПО ВСЕЙ РОССИИ",
     description: "Мини текст описания новости и ее актуальности",
     additionalText: "СБОРКА",
@@ -103,8 +101,8 @@ export const shakhronFunctionBlock1 = () => {
   });
 
   const newsBlock2 = createNewsBlock({
-    upperImage: "../../../shered/images/Rectangle3.png",
-    lowerImage: "../../../shered/images/Rectangle4.png",
+    upperImage: "../src/shared/images/Rectangle3.png",
+    lowerImage: "../src/shared/images/Rectangle4.png",
     title: "КАК ВЫБРАТЬ МАТРАС",
     description: "Мини текст описания новости и ее актуальности",
     additionalText: "КАКОЙ ШКАФ ВЫБРАТЬ В 2022 ГОДУ",
@@ -116,8 +114,9 @@ export const shakhronFunctionBlock1 = () => {
 
   root.append(mainContainer);
 };
+shakhronFunctionBlock1();
 
-export const shakhronFunctionBlock2 = () => {
+const shakhronFunctionBlock2 = () => {
   const root = document.getElementById("root");
   const mainContainer = document.createElement("div");
   mainContainer.className = "main-container";
@@ -151,7 +150,7 @@ export const shakhronFunctionBlock2 = () => {
     const leftButton = document.createElement("div");
     leftButton.className = "nav-button nav-button-left";
     const leftIcon = document.createElement("img");
-    leftIcon.src = "../../../shared/icons/blueArrow.png";
+    leftIcon.src = "../src/shared/icons/blueArrow.png";
     leftIcon.className = "button-icon";
     leftButton.append(leftIcon);
     upperText.append(leftButton);
@@ -159,11 +158,12 @@ export const shakhronFunctionBlock2 = () => {
     newsUpper.append(upperImageContainer);
     newsUpper.append(upperText);
 
-    return newsUpper;
+    return newsUpper; // Возвращаем только верхнюю часть
   };
 
+  // Создаем только один новостной блок
   const newsBlock3 = createNewsBlock({
-    upperImage: "../../../shered/images/Rectangle5.png",
+    upperImage: "../src/shared/images/Rectangle5.png",
     title: "ДОСТАВКА ПО ВСЕЙ РОССИИ",
     description: "Мини текст описания новости и ее актуальности",
     price: "Цены от: 42.000р",
@@ -172,3 +172,5 @@ export const shakhronFunctionBlock2 = () => {
   mainContainer.append(newsBlock3);
   root.append(mainContainer);
 };
+
+shakhronFunctionBlock2();
