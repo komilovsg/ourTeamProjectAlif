@@ -122,14 +122,14 @@
 .img-right2 {
   width: 45px;
 }
-.footer {
+.bottom-section {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 11%;
   display: flex;
 }
-.foot1 {
+.bottom-text1 {
   width: 25%;
   align-items: center;
   justify-content: center;
@@ -138,7 +138,7 @@
   color: gray;
   border-right: 1px solid grey;
 }
-.foot2 {
+.bottom-text2 {
   width: 25%;
   align-items: center;
   justify-content: center;
@@ -146,12 +146,12 @@
   font-size: x-large;
   border: 1px solid grey;
 }
-.img1 {
+.arrow-down1 {
   width: 15px;
   height: 15px;
   margin-left: 10px;
 }
-.foot3 {
+.bottom-text3 {
   width: 25%;
   align-items: center;
   justify-content: center;
@@ -161,12 +161,12 @@
 
   color: blue;
 }
-.img2 {
+.arrow-down2 {
   width: 15px;
   height: 15px;
   margin-left: 10px;
 }
-.foot4 {
+.bottom-text4 {
   width: 25%;
   align-items: center;
   justify-content: center;
@@ -229,19 +229,55 @@
   .text {
     font-size: 15px;
   }
-  .footer {
+  .bottom-section {
     flex-direction: column;
     position: relative;
   }
-  .foot1,
-  .foot4 {
+  .bottom-text1,
+  .bottom-text4 {
     visibility: hidden;
   }
-  .foot2,
-  .foot3 {
+  .bottom-text2,
+  .bottom-text3 {
     width: 100%;
     border: none;
     border: 1px solid grey;
     padding: 15px;
+  }
+  .video-container {
+    background-image: url("../src/shared/images/Rectangle6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .photo-container {
+  }
+
+  .playVideo {
+    width: 100%;
+    height: 438px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
+  }
+
+  .link {
+    border: 2px solid #000; /* Цвет бордера */
+    border-radius: 20px; /* Закругленные края */
+    padding: 10px 20px; /* Паддинг */
+    text-align: center;
+    cursor: pointer;
   }
 }
