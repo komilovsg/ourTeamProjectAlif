@@ -1,46 +1,17 @@
 const videoPlay = () => {
   const root = document.getElementById("root");
-
-  // Создаем контейнер для видео
   const videoContainer = document.createElement("div");
   videoContainer.className = "video-container";
 
-  // Создаем контейнер для фото
   const photoContainer = document.createElement("div");
   photoContainer.className = "photo-container";
 
-  // Создаем и добавляем изображение
-  // const image = document.createElement("img");
-  // image.src = "../src/shared/images/Rectangle6.png";
-  // image.className = "playVideo";
-  // photoContainer.appendChild(image);
-
-  // Создаем оверлей
   const overlay = document.createElement("div");
   overlay.className = "overlay";
 
-  // Создаем текст "ВИДЕОПРЕЗЕНТАЦИЯ"
-  const videoText = document.createElement("div");
-  videoText.innerText = "ВИДЕОПРЕЗЕНТАЦИЯ";
-  overlay.appendChild(videoText);
-
-  // Создаем фото
-  const overlayImage = document.createElement("img");
-  overlayImage.src = "../src/shared/images/iconPlayRed"; // Замените на свой путь
-  overlayImage.alt = "Описание изображения";
-  overlay.appendChild(overlayImage);
-
-  // Создаем текст "ЧИТАТЬ О КОМПАНИИ"
-  const readMore = document.createElement("div");
-  readMore.innerText = "ЧИТАТЬ О КОМПАНИИ";
-  readMore.className = "link";
-  overlay.appendChild(readMore);
-
-  // Добавляем контейнеры в видеоконтейнер
   videoContainer.appendChild(photoContainer);
   videoContainer.appendChild(overlay);
 
-  // Добавляем видеоконтейнер в корень
   root.appendChild(videoContainer);
 };
 
