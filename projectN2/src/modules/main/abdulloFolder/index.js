@@ -28,7 +28,7 @@ const abdulloFunctionBlock1 = () => {
     title,
     description,
     additionalText,
-    price,
+    price
   }) => {
     const newsUpper = document.createElement("div");
     newsUpper.className = "news-upper";
@@ -115,8 +115,7 @@ const abdulloFunctionBlock1 = () => {
     lowerImage: "../src/shared/images/Rectangle8.png",
     title: "ДОСТАВКА ПО ВСЕЙ РОССИИ",
     description: "Мини текст описания новости и ее актуальности",
-    additionalText: "СБОРКА",
-    // price: "Цены от: 42.000р",
+    additionalText: "СБОРКА"
   });
 
   const newsBlock2 = createNewsBlock({
@@ -124,8 +123,7 @@ const abdulloFunctionBlock1 = () => {
     lowerImage: "../src/shared/images/Rectangle10.png",
     title: "КАК ВЫБРАТЬ МАТРАС",
     description: "Мини текст описания новости и ее актуальности",
-    additionalText: "КАКОЙ ШКАФ ВЫБРАТЬ В 2022 ГОДУ",
-    // price: "Цены от: 50.000р",
+    additionalText: "КАКОЙ ШКАФ ВЫБРАТЬ В 2022 ГОДУ"
   });
 
   mainContainer.append(newsBlock1);

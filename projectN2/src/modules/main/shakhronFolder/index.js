@@ -9,7 +9,7 @@ const shakhronFunctionBlock1 = () => {
     title,
     description,
     additionalText,
-    price,
+    price
   }) => {
     const newsUpper = document.createElement("div");
     newsUpper.className = "news-upper";
@@ -97,7 +97,7 @@ const shakhronFunctionBlock1 = () => {
     title: "ДОСТАВКА ПО ВСЕЙ РОССИИ",
     description: "Мини текст описания новости и ее актуальности",
     additionalText: "СБОРКА",
-    price: "Цены от: 42.000р",
+    price: "Цены от: 42.000р"
   });
 
   const newsBlock2 = createNewsBlock({
@@ -106,7 +106,7 @@ const shakhronFunctionBlock1 = () => {
     title: "КАК ВЫБРАТЬ МАТРАС",
     description: "Мини текст описания новости и ее актуальности",
     additionalText: "КАКОЙ ШКАФ ВЫБРАТЬ В 2022 ГОДУ",
-    price: "Цены от: 50.000р",
+    price: "Цены от: 50.000р"
   });
 
   mainContainer.append(newsBlock1);
@@ -158,15 +158,14 @@ const shakhronFunctionBlock2 = () => {
     newsUpper.append(upperImageContainer);
     newsUpper.append(upperText);
 
-    return newsUpper; // Возвращаем только верхнюю часть
+    return newsUpper;
   };
 
-  // Создаем только один новостной блок
   const newsBlock3 = createNewsBlock({
     upperImage: "../src/shared/images/Rectangle5.png",
     title: "ДОСТАВКА ПО ВСЕЙ РОССИИ",
     description: "Мини текст описания новости и ее актуальности",
-    price: "Цены от: 42.000р",
+    price: "Цены от: 42.000р"
   });
 
   mainContainer.append(newsBlock3);
