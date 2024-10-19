@@ -13,10 +13,6 @@ export const showProductDetails = (product) => {
   const modalButtons = document.createElement("div");
   const generalContentOfCount = document.createElement("div");
 
-  const leftPartAdaptive = document.createElement("div");
-  const rightPartAdaptive = document.createElement("div");
-  const priceAdaptive = document.createElement("div");
-
   const compound = document.createElement("p");
   const quantity = document.createElement("span");
   const priceProduct = document.createElement("p");
@@ -54,10 +50,7 @@ export const showProductDetails = (product) => {
   modalInside.classList.add("modalInside");
   modalButtons.classList.add("modalButtons");
   generalContentOfCount.classList.add("generalContentOfCount");
-  leftPartAdaptive.classList.add("leftPartAdaptive");
-  rightPartAdaptive.classList.add("rightPartAdaptive");
   addButton.classList.add("addButton");
-  priceAdaptive.classList.add("priceAdaptive");
 
   incrementButton.onclick = () => {
     count++;
@@ -85,19 +78,10 @@ export const showProductDetails = (product) => {
   modalButtons.append(decrementButton, quantity, incrementButton);
   generalContentOfCount.append(modalButtons, priceProduct);
   alltext.append(description, compound);
-  rightPart.append(alltext, generalContentOfCount);
   leftPart.append(imgLeft, addButton);
-  leftPartAdaptive.append(imgLeft, alltext);
-  rightPartAdaptive.append(addButton, modalButtons);
-  priceAdaptive.append(priceProduct);
+  rightPart.append(alltext, generalContentOfCount);
   navPart.append(modalHeader, closeButton);
-  parts.append(
-    leftPart,
-    leftPartAdaptive,
-    rightPart,
-    rightPartAdaptive,
-    priceAdaptive
-  );
+  parts.append(leftPart, rightPart);
   modalInside.append(navPart, parts);
   modal.append(modalInside);
   productList.append(modal);

@@ -297,28 +297,6 @@
   cursor: pointer;
 }
 
-.leftPartAdapte {
-  display: none;
-}
-
-.rightPartAdaptive {
-  display: none;
-}
-
-.priceAdaptive {
-  display: none;
-}
-
-@media screen and (max-width: 1496px) {
-  .modalIn {
-    margin-top: 5%;
-  }
-
-  .modalInside {
-    margin-top: 5%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .modalIn {
     flex-direction: column;
@@ -336,6 +314,7 @@
   .modalLeft {
     display: none;
   }
+
   .modalRight {
     border-radius: 24px;
   }
@@ -367,15 +346,7 @@
     font-size: 12px;
   }
 
-  .leftPart {
-    display: none;
-  }
-
-  .rightPart {
-    display: none;
-  }
-
-  .leftPartAdapte {
+  .leftPartAdaptive {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -387,10 +358,6 @@
     justify-content: space-between;
     margin-top: 50px;
     gap: 8px;
-  }
-
-  .addButton {
-    width: 200px;
   }
 
   .priceAdaptive {
