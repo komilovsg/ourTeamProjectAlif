@@ -346,31 +346,7 @@
     font-size: 12px;
   }
 
-  .leftPartAdaptive {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
 
-  .rightPartAdaptive {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 50px;
-    gap: 8px;
-  }
-
-  .priceAdaptive {
-    display: flex;
-    align-self: flex-end;
-  }
-
-  .priceAdaptive :nth-child(1) {
-    font-family: "Nunito";
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20.8px;
-  }
 }
 
 @media screen and (max-width: 320px) {
