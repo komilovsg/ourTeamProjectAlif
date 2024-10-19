@@ -1,1 +1,108 @@
-#footer {}
+#footer {
+  background: #fff;
+  padding: 50px 211px 40px 75px;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contentFooter {
+  display: flex;
+  align-items: flex-start;
+  gap: 126px;
+}
+
+.footerLogo :nth-child(1) {
+  color: #ff7020;
+  font-family: "Nunito";
+  font-weight: 900;
+  font-size: 42px;
+}
+
+.allContainerFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.socialFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.socialFooter :nth-child(1) {
+  font-family: "Nunito";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.footerIcons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footerOrder {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.footerOrder :nth-child(1) {
+  font-family: "Nunito";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.footerOrder :nth-child(2) {
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footerCall {
+  width: 18px;
+}
+
+.contentTxt {
+  padding-top: 50px;
+  font-family: "Nunito";
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  #footer {
+    padding: 20px;
+  }
+
+  .allContainerFooter {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .contentFooter {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footerOrder {
+    gap: 5px;
+  }
+
+  .socialFooter {
+    gap: 5px;
+  }
+}

@@ -1,1 +1,6 @@
 @import url("./modules/index.css");
+
+#nav {
+  background-image: url("../src/shared/images/navbar_img.png");
+  padding-top: 24px;
+}
