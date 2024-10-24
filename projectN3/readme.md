@@ -1,106 +1,75 @@
-### E-Commerce Platform
+# Проект 3 Алиф Академия - Команда 3
 
-E-Commerce Platform - system for managing products, orders, and customers across various departments.
+## Описание проекта
 
-## Code Style
+Проект 3 - это учебный проект, разработанный для практики работы с асинхронными и синхронными функциями. Он представляет собой одностраничный сайт ресторана быстрого питания, где пользователи могут просматривать меню, переходить по разделам и открывать карточки товаров для более детального ознакомления. Основная цель проекта — помочь участникам команды понять и освоить принципы асинхронного и синхронного программирования.
 
-- Pass an object as argument of function, if quantity of needed arguments more than 2.
-- Variables' name must:
+## Цель и назначение
 
-- Describe value of var
+Проект помогает глубже понять, как работают асинхронные и синхронные функции, путем моделирования взаимодействия с backend. Хотя реальная работа с сервером не осуществляется, данное решение позволяет отработать навыки работы с асинхронным кодом.
 
-  ```diff
-  type: string
-  - Incorrect: error
-  + Correct: errorMessage
+Аудитория проекта — это участники команды 3 Алиф Академии, которые изучают основы программирования.
 
-  type: boolean
-  - Incorrect: loading
-  + Correct: isLoading | hasError | showModal
-    Prefixes: is | has | show
+## Технологии
 
-  - Incorrect: isNotActive (Just imagine !isNotActive)
-  + Correct: isActive
+- **HTML**
+- **CSS**
+- **JavaScript**
 
-  type: object
-  - Incorrect: isUser (Just imagine isUser.fullName)
-  + Correct: user (user.fullName)
-  ```
+## Установка и настройка
 
-- React props' name must:
-  Event handler: `on{EventName}`
-  ```diff
-  - Incorrect: handleOnClick={() => {}}
-  + Correct: onClick={() => {}}
-  ```
-  Variables that are responsible for counting: `{variableName}Count`
-  ```diff
-  - Incorrect: notifications={10}
-  + Correct: notificationCount={10}
-  ```
-  Boolean variables: `is{VariableName}`
-  ```diff
-  - Incorrect: open={true}
-  + Correct: isOpen={true}
-    Prefixes: is | show
-  ```
-- React component's events must:
-  ```diff
-  - Incorrect: const onClick = () => {}
-  + Correct: const handleClick = () => {}
-  ```
+Проект не требует установки дополнительных зависимостей и может быть запущен локально с помощью любого сервера, поддерживающего статические файлы, например, с помощью функции Live Server в редакторе кода.
 
-## Architecture of the project:
+## Использование
 
-The [Feature Sliced](https://feature-sliced.design/) methodology was taken as the base architecture and was added few rules upon it.
+Запуск проекта максимально прост:
 
-1. Entity : `entities/{entityName}`
-
-   - `index.ts` - public api of entity
-   - `types.ts` - entity types
-   - `libs.ts` - entity libs
-   - `service.ts` - entity service
-   - `components` - entity components
-
-2. Feature : `features/{domain-pathname}/{feature-name}`
-
-   - `index.ts` - public api of feature
-   - `types.ts` - feature types
-   - `libs.ts` - feature libs
-   - `service.ts` - feature service
-   - `components` - feature components
-   - `ui.tsx` - feature ui
-
-3. Widgets : `widgets/{widget-name}`
-
-   - `index.ts` - public api of widget
-   - `types.ts` - widget types
-   - `libs.ts` - widget libs
-   - `service.ts` - widget service
-   - `components` - widget components
-   - `ui.tsx` - widget ui
-
-   ui.tsx in any layer is a main component ( the name of component's case
-   is PascalCase
-   ) of this layer.
-
-   ```diff
-   export const ComponentName = () => {
-     return <div>ComponentName</div>
-   }
+1. Клонируйте репозиторий с GitHub:
    ```
+   git clone https://github.com/komilovsg/ourTeamProjectAlif.git
+   ```
+2. Перейдите в папку проекта:
+   ```
+   cd ourTeamProjectAlif/projectN3
+   ```
+3. Откройте файл `index.html` из папки `public` в браузере, чтобы увидеть сайт.
 
-4. Configs : this directory contains all configs of the project (prodivers, styles, etc.)
+## Структура проекта
 
-5. Shared : this directory contains all shared components, hooks, types, etc.
+После клонирования репозитория и перехода в папку `projectN3` вы увидите следующую структуру:
 
-### More information:
+- `.idea/` — файлы конфигурации IDE.
+- `public/` — содержит единственный файл `index.html`.
+- `src/` — основная папка с исходным кодом, включает:
+  - `modules/` — структура компонентов проекта:
+    - `./footer` — компоненты, относящиеся к подвалу страницы.
+    - `./navbar` — компоненты для навигационного меню.
+    - `./order` — компоненты, связанные с заказом.
+    - `./product-list` — компоненты для отображения списка продуктов.
+    - `index.css` — стили, относящиеся к компонентам.
+    - `index.js` — главный файл, объединяющий логику компонентов.
+  - `shared/` — общие ресурсы:
+    - `./icons` — иконки, используемые в проекте.
+    - `./images` — изображения, используемые на сайте.
+  - `index.css` — стили проекта.
+  - `index.js` — главный файл с JavaScript-кодом.
 
-- [Typescript](https://www.typescriptlang.org/) as a main programming language
-- [Next.js](https://nextjs.org/) as a React framework
-- [Axios](https://github.com/axios/axios) as a Promise based HTTP client
-- [Prettier](https://prettier.io/docs/en/index.html) for formatting code
-- [Husky](https://typicode.github.io/husky/#/) git hooks made easy
-- [Eslint](https://eslint.org) for linting and formatting staged files
-- [CI/CD](https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps) for deployment in prod and dev
-- [Github Flow](https://guides.github.com/introduction/flow/) as a git workflow**
+## Функциональность
+
+Проект представляет собой одностраничный сайт ресторана быстрого питания. На сайте доступны следующие возможности:
+
+- Просмотр меню.
+- Переход по разделам меню.
+- Открытие карточек товаров для детального просмотра.
+
+## Интеграции
+
+В проекте отсутствуют интеграции с внешними API.
+
+## Авторы и контакты
+
+Проект выполнен командой 3 Алиф Академии.
+
+## Лицензия
+
+Проект доступен в открытом доступе и может быть использован для образовательных целей.

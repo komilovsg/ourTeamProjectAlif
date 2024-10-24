@@ -1,1 +1,11 @@
 @import url("./modules/index.css");
+
+body {
+  max-width: 1550px;
+  margin: auto;
+}
+
+#nav {
+  background-image: url("../src/shared/images/navbar_img.png");
+  padding-top: 24px;
+}

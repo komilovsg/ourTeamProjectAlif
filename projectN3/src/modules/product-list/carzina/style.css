@@ -1,0 +1,111 @@
+@import url("../modal/style.css");
+
+.cartButtons {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f3;
+  border: none;
+  border-radius: 12px;
+  padding: 9px 12px;
+  gap: 18px;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cartButtons button {
+  border: none;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f2f2f3;
+  border-bottom: 1px solid #f2f2f3;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.cartContent {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cartImg {
+  width: 64px;
+}
+
+.cartTitle {
+  font-family: "Nunito";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.37px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartTitle :nth-child(1) {
+  font-family: "Nunito";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.37px;
+  color: #b1b1b1;
+}
+
+.cartItemDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cartItemDetails :nth-child(1) {
+  font-family: "Nunito";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.37px;
+}
+
+#productsCarzina {
+  margin-top: 12px;
+}
+
+.totalContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+}
+.orderContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 10px;
+}
+
+.orderButton {
+  background-color: #ff7020;
+  color: #fff;
+  border: none;
+  padding: 12px 0px;
+  border-radius: 12px;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.deliveryContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
