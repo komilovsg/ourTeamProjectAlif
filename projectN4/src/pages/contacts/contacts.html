@@ -4,18 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Контакты</title>
-    <link rel="stylesheet" href="./modules/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <slot id="navbar"></slot>
-    <slot id="contacts-slot"></slot>
-    <slot id="footer"></slot>
+    <section
+      class="container py-20 mx-auto flex flex-col justify-center items-center gap-5"
+    >
+      <div class="flex flex-wrap justify-around items-center gap-20">
+        <a class="title-font font-medium text-gray-900 text-xl">
+          +7 (499) 686-10-14
+        </a>
+        <a href="#" class="text-sm text-gray-500">
+          г. Мосвка, Холодильный пер. 4к1с8
+        </a>
+        <a href="#" class="text-sm text-gray-500"> a.dragunov@tdaliance.ru </a>
+        <div class="flex justify-center">
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-    <script type="module" src="./modules/index.js"></script>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      <div class="text-gray-600 body-font relative">
+        <div class="bg-gray-300 w-[1440px] h-[600px]">
+          <iframe
+            width="100%"
+            height="600px"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="map"
+            scrolling="no"
+            src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Москва,+Холодильный+переулок+4к1с8&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+            style="filter: grayscale(0) contrast(1.2)"
+          ></iframe>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

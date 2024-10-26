@@ -1,8 +1,8 @@
 import L from "leaflet";
 
 function createContacts() {
-  const container = document.createElement("slot");
-  container.classList.add("contacts-slot");
+  const container = document.createElement("div");
+  container.classList.add("contacts");
 
   const contactInfo = document.createElement("div");
   contactInfo.classList.add("contact-info");
@@ -56,5 +56,7 @@ function createContacts() {
   return container;
 }
 
-const contactsSlot = document.getElementById("contacts-slot");
+createContacts();
+
+const contactsSlot = document.getElementById("contacts");
 contactsSlot.append(createContacts());
