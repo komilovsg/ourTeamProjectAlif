@@ -1,8 +1,8 @@
 import L from "leaflet";
 
 function createContacts() {
-  const container = document.createElement("div");
-  container.classList.add("contacts-container");
+  const container = document.createElement("slot");
+  container.classList.add("contacts-slot");
 
   const contactInfo = document.createElement("div");
   contactInfo.classList.add("contact-info");
