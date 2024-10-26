@@ -1,0 +1,19 @@
+.brands {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.container {
+  margin: 100px 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+.block {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.text {
+  color: #828a99;
+}

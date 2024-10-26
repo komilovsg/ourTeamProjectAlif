@@ -1,0 +1,82 @@
+.contracts {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.typesChemistry {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 45px;
+}
+.miniTitle {
+  font-size: 30px;
+  margin-left: 130px;
+}
+.text {
+  color: grey;
+  margin-bottom: 150px;
+  margin-left: 130px;
+}
+.chemistryBlock {
+  padding-top: 20px;
+  width: 450px;
+  height: 553px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 375px) {
+  .body {
+    width: 100vw;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .line {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .titleContainer {
+    width: 90%;
+    background-color: #f0f2f5;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .typesChemistry {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .miniTitle {
+    font-size: 24px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .text {
+    color: grey;
+    margin-bottom: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .chemistryBlock {
+    padding-top: 15px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+}

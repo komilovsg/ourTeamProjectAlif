@@ -35,9 +35,8 @@ const initializeComponents = () => {
   addComponent("componetn", commonComponent.outerHTML);
   addComponent("security", schemeComponent.outerHTML);
   addComponent("contracting", contractingComponent.outerHTML);
-
-  const additionalContent = `<h2>Дополнительный Компонент</h2><p>Здесь можно добавить еще контента.</p>`;
-  addComponent("one", additionalContent);
+  addComponent("aboutUs", commonComponent.outerHTML);
+  addComponent("typesChemistry", contractingComponent.outerHTML)
 };
 
 const loadPage = async (page) => {
@@ -50,6 +49,8 @@ const loadPage = async (page) => {
 const updateNavbar = (page) => {
   const navbar = document.getElementById("navbar");
   const links = document.querySelectorAll(".links a");
+  const logo = document.getElementById("logo");
+  const tel = document.getElementById("tel");
 
   if (page === "home") {
     navbar.classList.add("navbarActive");
@@ -58,6 +59,7 @@ const updateNavbar = (page) => {
       link.classList.add("linksActive");
       link.classList.remove("linksOther");
     });
+    logo.src = "../src/shared/icons/logo.png";
   } else {
     navbar.classList.add("otherActive");
     navbar.classList.remove("navbarActive");
@@ -65,6 +67,9 @@ const updateNavbar = (page) => {
       link.classList.add("linksOther");
       link.classList.remove("linksActive");
     });
+    logo.src = "../src/shared/icons/logo (11).png";
+    logo.style.width = "140px";
+    tel.style.color = "#ooo";
   }
 };
 

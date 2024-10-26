@@ -1,9 +1,9 @@
 @import url("./shared/modules/index.css");
 @import url("../src/pages/home/style.css");
-@import url("../src/pages/about/modules/index.css");
-@import url("../src/pages/brands/modules/index.css");
+@import url("../src/pages/about/index.css");
+@import url("../src/pages/brands/index.css");
 @import url("../src/pages/contacts/modules/index.css");
-@import url("../src/pages/contracts/modules/index.css");
+@import url("../src/pages/contracts/index.css");
 @import url("../src/pages/news/modules/index.css");
 @import url("../src/pages/notFound/modules/index.css");
 

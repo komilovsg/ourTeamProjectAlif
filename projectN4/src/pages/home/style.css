@@ -13,7 +13,7 @@
   gap: 30px;
 }
 
-.title {
+.titleHr {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   line-height: 70px;
@@ -31,5 +31,41 @@
 }
 
 #security {
-    padding: 150px 200px;
+  padding: 150px 200px;
+}
+
+.headerForHome {
+  font-weight: 500;
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  padding-top: 30px;
+}
+
+.lineHm {
+  border: 1px solid #5c8ee5;
+  width: 150px;
+}
+
+.h1Our {
+  font-weight: 500;
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  padding-top: 30px;
+}
+
+.ineHm {
+  border: 1px solid #5c8ee5;
+  width: 50px;
+}
+
+.contentForHm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.contentForHm :nth-child(2) {
+  color: #5c8ee5;
+  font-weight: 500;
 }
