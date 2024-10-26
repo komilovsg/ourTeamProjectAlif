@@ -36,6 +36,7 @@ const initializeComponents = () => {
   addComponent("security", schemeComponent.outerHTML);
   addComponent("contracting", contractingComponent.outerHTML);
   addComponent("aboutUs", commonComponent.outerHTML);
+  addComponent("typesChemistry", contractingComponent.outerHTML)
 };
 
 const loadPage = async (page) => {
@@ -67,7 +68,7 @@ const updateNavbar = (page) => {
       link.classList.remove("linksActive");
     });
     logo.src = "../src/shared/icons/logo (11).png";
-    logo.style.width = "80";
+    logo.style.width = "140px";
     tel.style.color = "#ooo";
   }
 };
