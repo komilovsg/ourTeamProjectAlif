@@ -1,0 +1,233 @@
+@import url("./shared/modules/index.css");
+@import url("../src/pages/home/style.css");
+@import url("../src/pages/about/modules/index.css");
+@import url("../src/pages/brands/modules/index.css");
+@import url("../src/pages/contacts/modules/index.css");
+@import url("../src/pages/contracts/modules/index.css");
+@import url("../src/pages/news/modules/index.css");
+@import url("../src/pages/notFound/modules/index.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.homeContent {
+  position: relative;
+  padding: 205px 200px 0;
+  color: #fff;
+  background-image: url("../src/shared/images/main_img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.homeContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.homeContent * {
+  position: relative;
+  z-index: 2;
+}
+
+.hrTop {
+  border: none;
+  border-bottom: 1px solid #5c8ee5;
+  width: 150px;
+}
+
+.contentSecurity {
+  display: flex;
+  border: 1px solid #f2f2f2;
+  margin-top: 50px;
+}
+
+.securityItem {
+  border-right: 1px solid #f2f2f2;
+  padding: 30px 50px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
+}
+
+.securityItem p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: left;
+}
+
+.titleContent {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.titleContent :nth-child(1) {
+  color: #5c8ee5;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 57.6px;
+  text-align: left;
+}
+
+.hrContent {
+  border: none;
+  border-bottom: 1px solid #ebebf0;
+  width: 230px;
+}
+
+.allContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.schemeItem {
+  display: flex;
+  gap: 30px;
+  width: 300px;
+}
+
+.contentScheme {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.hrAll {
+  border: none;
+  border-top: 2px solid #5c8ee5;
+  width: 150px;
+}
+
+.header {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 72px;
+  text-transform: uppercase;
+}
+
+.contentText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+}
+
+.hedaerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contentText :nth-child(1) {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 44.8px;
+  text-align: left;
+}
+
+.contentText :nth-child(2) {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25.6px;
+  color: #828a99;
+}
+
+.containerForFirstIndex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.containerForFirstIndex :nth-child(1) {
+  border: none;
+  border-top: 2px solid #5c8ee5;
+  width: 40px;
+}
+
+.containerForFirstIndex :nth-child(2) {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25.6px;
+  color: #5c8ee5;
+}
+
+.contentContracting {
+  padding: 100px 0px;
+}
+
+.contentContract {
+  width: 380px;
+  padding: 40px 0px 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ebebf0;
+  cursor: pointer;
+}
+
+.containerContracting {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.textContentContract {
+  padding-bottom: 120px;
+}
+
+.textContentContract :nth-child(1) {
+  font-family: " Noto Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 44.8px;
+  text-align: left;
+  color: #292d33;
+}
+
+.textContentContract :nth-child(2) {
+  width: 250px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: left;
+  color: #828a99;
+}
+
+.hedaerContentR {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 190px;
+  padding-bottom: 50px;
+}
+
+.contentContract.active {
+  border-color: #5c8ee5;
+}
+
+.textContentContract.active h3 {
+  color: #5c8ee5;
+}
