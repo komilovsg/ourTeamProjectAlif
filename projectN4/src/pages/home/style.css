@@ -69,3 +69,8 @@
   color: #5c8ee5;
   font-weight: 500;
 }
+
+.ourRelationshipHm {
+  display: flex;
+  justify-content: center;
+}

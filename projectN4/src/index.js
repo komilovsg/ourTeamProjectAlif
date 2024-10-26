@@ -69,7 +69,7 @@ const updateNavbar = (page) => {
     });
     logo.src = "../src/shared/icons/logo (11).png";
     logo.style.width = "140px";
-    tel.style.color = "#ooo";
+    tel.style.color = "black";
   }
 };
 
